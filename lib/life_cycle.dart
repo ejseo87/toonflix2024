@@ -20,7 +20,7 @@ class _AppState extends State<App> {
     setState(() {
       showTitle = !showTitle; //실수하기 쉬운 구문 , 조심할 것!!!!!!!
     });
-    print(showTitle);
+    //print(showTitle);
   }
 
   @override
@@ -72,18 +72,18 @@ class _MyLargeTitleState extends State<MyLargeTitle> {
   @override
   void initState() {
     super.initState();
-    print('initState!!!');
+    // print('initState!!!');
   }
 
   @override
   void dispose() {
     super.dispose();
-    print('dispose!!!');
+    //print('dispose!!!');
   }
 
   @override
   Widget build(BuildContext context) {
-    print('build!!!');
+    //print('build!!!');
     return Text(
       'My Large Title',
       style: TextStyle(

@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void onStartPressed() {
-    print('onStartPressed');
+    //print('onStartPressed');
     timer = Timer.periodic(
       const Duration(seconds: 1),
       onTick,
@@ -40,16 +40,16 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {
       isRunning = true;
     });
-    print(isRunning);
+    //print(isRunning);
   }
 
   void onPausePressed() {
-    print('onPausePressed');
+    //print('onPausePressed');
     timer.cancel();
     setState(() {
       isRunning = false;
     });
-    print(isRunning);
+    //print(isRunning);
   }
 
   void onRest() {
